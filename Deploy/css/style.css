@@ -107,7 +107,7 @@ hr {
 
 #logo h2 {
 	float: right;
-	padding-top: 95px;
+	padding-top: 35px;
 	font-size: 16px;
 	font-weight: normal;
 }
@@ -140,6 +140,12 @@ hr {
 	float: left;
 	padding: 0 20px 0 22px;
 	background: url(../images/img03.gif) no-repeat left center;
+	transition-property: padding;
+	transition-duration: 0.3s;
+}
+
+#menu li:hover{
+	padding: 0 25px 0 27px;
 }
 
 #menu li.first {
@@ -151,6 +157,12 @@ hr {
 	font-size: 14px;
 	font-weight: bold;
 	color: #FFFFFF;
+	transition-property: color;
+	transition-duration: .4s;
+}
+
+#menu a:hover{
+	color: #F37705;
 }
 
 /* Banner */
@@ -304,15 +316,21 @@ hr {
 #footerImgs{
 	padding-right: 20px;
 }
+#footerImgs input{
+	height:20px;
+}
 #footerImgs img,
 #footerImgs input{
 	float: right;
     background: none;
     border: none;
-    border-top-color: none;
-    border-left-color: none;
-    color: none;
-}
-#fbIcon img{
 	padding-left: 5px;
+    transition: all;
+    transition-duration: .3s;
+}
+#footerImgs img:hover{
+	width: 25px;
+}
+#footerImgs input:hover{
+	height: 25px;
 }

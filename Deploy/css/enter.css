@@ -1,13 +1,12 @@
-#float {
-    position: relative;
-    -webkit-animation: floatBubble 2s infinite  normal ease-out;
+#float img {
+    /*position: relative;*/
+    -webkit-transition: all;
+    transition: all;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
 }
-@-webkit-keyframes floatBubble {
-    100% {
-        left:500px;
-        rotate()
-    }
-    0% {
-        right: 0px;
-    }
+
+#float img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
