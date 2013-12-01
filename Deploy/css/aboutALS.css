@@ -1,0 +1,9 @@
+#aboutALS img{
+    float: right;
+    border: 2px;
+    border-color: black;   
+    /*position: block;*/
+}
+#aboutALS p{
+    /*width: 603px;*/
+}
