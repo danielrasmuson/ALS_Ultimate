@@ -1,0 +1,13 @@
+{
+	"folders":
+	[
+		{
+			"folder_exclude_patterns":
+			[
+				"Asset/frozenage"
+			],
+			"follow_symlinks": true,
+			"path": "C:\\Users\\Daniel\\Documents\\GitHub\\ALS_Ultimate"
+		}
+	]
+}
