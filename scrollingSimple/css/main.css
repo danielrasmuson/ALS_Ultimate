@@ -184,28 +184,36 @@ main {
 		color: #b2b2b2;
 		text-decoration: underline;
 	}
-.slideText{
+/*.slideText{
     font: 24px Helvetica;
-    padding: 0;
-    padding-top: 100px; 
-    margin: 0;
-    width: 700px;
+    display: inline-block;
+    background-color: rgba(255,255,255,.7);
+}
+#largerContainer{
+    position: absolute;
+    top: 70px;
+    width: 950px;
     margin-left: auto;
     margin-right: auto;
-    /*position: absolute;
-    top: 60px;
-    left: 100px;
-    background-color: rgba(255,255,255,.5);*/
+    position: relative;
+}*/
+.hsContainer{
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    /*padding-bottom: 0px;*/
+    /*margin-bottom: 0px;*/
 }
-.slideText p{
-    background-color: rgba(255,255,255,.3);
+#slide-1 .bcg {background-image:url('../img/tournament.jpg')}
+#slide-2 .bcg {background-image:url('../img/theCause.jpg')}
+#slide-3 .bcg {background-image:url('../img/layoutForALS.jpg')}
+#slide-4 .bcg {background-image:url('../img/landscape.jpg')}
+#slide-5 .bcg {background-image:url('../img/kilimanjaro.jpg')}
+#slide-6 .bcg {
+    background-color: #EBCD9B;
+    background-image: url("../img/logo.png");
+    background-size: auto 100%;
 }
-#slide-1 .bcg {background-image:url('../img/logo.jpg')}
-#slide-2 .bcg {background-image:url('../img/layoutForALS.jpg')}
-#slide-3 .bcg {background-image:url('../img/imageThree.jpg')}
-#slide-4 .bcg {background-image:url('../img/wow.jpg')}
-#slide-5 .bcg {background-image:url('../img/landscape.jpg')}
-#slide-6 .bcg {background-image:url('../img/kilimanjaro.jpg')}
 
 /* ==========================================================================
    Helper classes
