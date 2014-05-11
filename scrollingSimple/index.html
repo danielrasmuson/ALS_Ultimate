@@ -5,37 +5,23 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.7.1.min.js"></script>
-
-    <!-- jquery for stick -->
-    <script>
-    // Cache selectors outside callback for performance. 
-    var $window = $(window),
-        $stickyEl = $('#the-sticky-div'),
-        elTop = $stickyEl.offset().top;
-
-    $window.scroll(function() {
-        $stickyEl.toggleClass('sticky', $window.scrollTop() > elTop);
-    });
-    </script>
+    <script type="text/javascript" src="js/navClick.js"></script>
 </head>
 
 <body class="loading">
-    <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-        <nav>
-            <div id="middle">
-                <ul>
-                    <li id="nav1"><a href="#text1">Tournament</a></li>
-                    <li id="nav2"><a href="#text2">Cause</a></li>
-                    <!-- <li id="nav1"><a href="#text3">Donations</a></li> -->
-                    <li id="nav3"><a href="#text3">Sponsors</a></li>
-                    <li id="nav4"><a href="#text4">Sign Up</a></li>
-                    <li id="nav5"><a href="#text5">About Us</a></li>
-                    <div id="disc"><img src="img/discALSColor.png" alt="frisbee likes to fly"></div>
-                </ul>
-            </div>
-        </nav> 
+
+    <nav>
+        <div id="middle">
+            <ul>
+                <a href="#text1" onclick="clickNav1();"><li id="nav1">Tournament</li></a>
+                <a href="#text2" onclick="clickNav2();"><li id="nav2">Cause</li></a>
+                <a href="#text3" onclick="clickNav3();"><li id="nav3">Sponsors</li></a>
+                <a href="#text4" onclick="clickNav4();"><li id="nav4">Sign Up</li></a>
+                <a href="#text5" onclick="clickNav5();"><li id="nav5">About Us</li></a>
+                <div id="disc"><img src="img/discALSColor.png" alt="frisbee likes to fly"></div>
+            </ul>
+        </div>
+    </nav> 
 
     <!--     <div id="preload">
         <img src="'img/logo.jpg'">
