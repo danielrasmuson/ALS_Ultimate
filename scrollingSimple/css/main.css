@@ -189,10 +189,10 @@ nav li {
     font-weight: bold;
 }
 #disc {
-    top: 7px;
+    position:relative;
+    top: -30px;
+    left: 0%;
     z-index: -1;
-    left: 510px;
-    position:absolute;
     /*-webkit-animation: rotation .3s infinite linear;
     rotation: .3s infinite linear;*/
     -webkit-transition: all 0.7s ease-out;
@@ -240,18 +240,12 @@ nav li {
     margin-right: auto;
     margin-left: auto;
 }
-#register{
-    width: 400px;
-    height: 600px;
-}
 #text4{
     /*float: right;*/
     position: relative;
 }
 iframe{
-    position: absolute;
-    top: 0;
-    right: 0;
+    padding-left: 120px;
 }
 #slide-1 .bcg {
     background-image:url('../img/tournament.jpg')

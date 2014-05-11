@@ -1,18 +1,18 @@
 function clickNav1(){
     // rotateAnimation("disc",1440);
-    document.getElementById("disc").style.left = "510px";
+    document.getElementById("disc").style.left = "0%";
 }
 function clickNav2(){
-    document.getElementById("disc").style.left = "660px";
+    document.getElementById("disc").style.left = "23%";
 }
 function clickNav3(){
-    document.getElementById("disc").style.left = "860px";
+    document.getElementById("disc").style.left = "41%";
 }
 function clickNav4(){
-    document.getElementById("disc").style.left = "1040px";
+    document.getElementById("disc").style.left = "61.5%";
 }
 function clickNav5(){
-    document.getElementById("disc").style.left = "1230px";
+    document.getElementById("disc").style.left = "80%";
 }
 function rotateAnimation(elementID,degrees){
     resetAnimation(elementID);
