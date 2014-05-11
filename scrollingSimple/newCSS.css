@@ -1,0 +1,65 @@
+nav {
+    /*to stick*/
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #ECC62D;
+}
+#middle {
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav ul {
+    list-style-type: none;
+    /*padding: 0;*/
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 80px;
+}
+nav li {
+    display: inline-block;
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+}
+#box {
+    top: 5px;
+    z-index: -1;
+    left: 500px;
+    position:absolute;
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+}
+#box img {
+    width: 30px;
+}
+#nav1:hover ~ #box {
+    -webkit-animation: rotation .3s infinite linear; 
+    left: 500;
+}
+#nav2:hover ~ #box {
+    -webkit-animation: rotation .3s infinite linear; 
+    left: 595px;
+}
+#nav3:hover ~ #box {
+    -webkit-animation: rotation .3s infinite linear; 
+    left: 720px;
+}
+#nav4:hover ~ #box {
+    left: 830px;
+    -webkit-animation: rotation .3s infinite linear; 
+}
+#nav5:hover ~ #box {
+    -webkit-animation: rotation .3s infinite linear; 
+    left: 950px;
+}
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(360deg);}
+}
