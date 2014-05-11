@@ -33,6 +33,8 @@ textarea {
 }
 
 body {
+    font-family: 'futura';
+    /*font-family: futura;*/
     font-size: 1em;
     line-height: 1.4;
 }
@@ -148,7 +150,7 @@ nav {
     top: 0;
     width: 100%;
     height: 40px;
-    background-color: #ECC62D;
+    /*background-image:url('img/grassRepeat.jpg');*/
 }
 nav a{
     color: black;
@@ -161,20 +163,19 @@ nav a{
 }
 nav ul {
     list-style-type: none;
-    /*padding: 0;*/
     margin: 0;
     padding-top: 5px;
-    padding-left: 80px;
+    width: 100%;
 }
 nav li {
     display: inline-block;
-    width: 110px;
     height: 30px;
     text-align: center;
     vertical-align: middle;
     line-height: 30px;
+    width: 19%;
 }
-#box {
+#disc {
     top: 5px;
     z-index: -1;
     left: 500px;
@@ -182,26 +183,26 @@ nav li {
     -webkit-transition: all 0.7s ease-out;
     transition: all 0.7s ease-out;
 }
-#box img {
-    width: 30px;
+#disc img {
+    width: 25px;
 }
-#nav1:hover ~ #box {
+#nav1:hover ~ #disc {
     -webkit-animation: rotation .3s infinite linear; 
-    left: 500;
+    left: 500px;
 }
-#nav2:hover ~ #box {
+#nav2:hover ~ #disc {
     -webkit-animation: rotation .3s infinite linear; 
     left: 595px;
 }
-#nav3:hover ~ #box {
+#nav3:hover ~ #disc {
     -webkit-animation: rotation .3s infinite linear; 
     left: 720px;
 }
-#nav4:hover ~ #box {
+#nav4:hover ~ #disc {
     left: 830px;
     -webkit-animation: rotation .3s infinite linear; 
 }
-#nav5:hover ~ #box {
+#nav5:hover ~ #disc {
     -webkit-animation: rotation .3s infinite linear; 
     left: 950px;
 }
@@ -210,6 +211,9 @@ nav li {
     from {-webkit-transform: rotate(0deg);}
     to   {-webkit-transform: rotate(360deg);}
 }
+/*#nav3:hover{
+    background-color: red;
+}*/
 /* ==========================================================================
     slides
    ========================================================================== */
