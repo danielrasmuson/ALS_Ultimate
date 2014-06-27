@@ -6,32 +6,40 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.7.1.min.js"></script>
     <script type="text/javascript" src="js/navClick.js"></script>
+    <script src="js/angular.min.js"></script>
+    <link rel="stylesheet" href="css/nav.css">
+
+    <script>
+        function TodoCtrl($scope) {
+            $scope.navBar = {"one":{"left":20},
+                            "two":{"left":185},
+                            "three":{"left":330},
+                            "four":{"left":480},
+                            "five":{"left":623},
+                            "six":{"left":775}};
+            $scope.navDisc = {"left":$scope.navBar.one.left};
+        } 
+    </script>
+
 </head>
 
-<body class="loading">
-
-    <nav>
-        <div id="middle">
-            <ul>
-                <a href="#text1" onclick="clickNav1();"><li id="nav1">Tournament</li></a>
-                <a href="#text2" onclick="clickNav2();"><li id="nav2">Cause</li></a>
-                <a href="#text3" onclick="clickNav3();"><li id="nav3">Sponsors</li></a>
-                <a href="#text4" onclick="clickNav4();"><li id="nav4">Sign Up</li></a>
-                <a href="#text5" onclick="clickNav5();"><li id="nav5">About Us</li></a>
-                <div id="disc"><img src="img/discALSColor.png" alt="frisbee likes to fly"></div>
-            </ul>
-        </div>
-    </nav> 
-
-    <!--     <div id="preload">
-        <img src="'img/logo.jpg'">
-        <img src="'img/layoutForAls.jpg'">
-        <img src="'img/imageThree.jpg'">
-        <img src="'img/wow.jpg'">
-        <img src="'img/landscape.jpg'">
-        <img src="'img/kilimanjaro.jpg'">
-    </div> -->
-
+<body ng-app class="loading">
+    <div ng-controller="TodoCtrl">
+        <nav style="postition: absolute">
+            <div id="middle">
+                <div style="width: 160px;position: relative;">
+                    <img src="img/logoBanner.png" alt="" style="display: block;">
+                    <div id="header">
+                        <ul>
+                            <li id="{{nav}}" style="left: {{nav.left}}px" ng-repeat="nav in navBar" ng-click="navDisc.left = nav.left"></li>
+                        </ul>
+                        <img src="img/bar.png" alt="" id="bar" >
+                        <img src="img/disc.png" alt="" id="disc" style="left: {{navDisc.left-7}}px;">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
     <main>
         <section id="slide-1" class="homeSlide">
             <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">

@@ -23,8 +23,7 @@
 </head>
 
 <body ng-app>
-<div ng-controller="TodoCtrl">
-    <style>
+  <style>
     body{
         padding: 0;
         margin: 0;
@@ -66,6 +65,8 @@
         top: -60px;
     }
     </style>
+<div ng-controller="TodoCtrl">
+  
     <div id="header" style="position: relative; width: 140px;">
         <img src="../images/logoBanner.png" alt="" style="display: block;">
         <nav style="postition: absolute; float: right;">
@@ -73,7 +74,7 @@
                 <li id="{{nav}}" style="left: {{nav.left}}px" ng-repeat="nav in navBar" ng-click="navDisc.left = nav.left"></li>
             </ul>
             <img src="images/bar.png" alt="" id="bar" style="top: -60px;">
-            <img src="images/disc.png" alt="" id="disc" style="left: {{navDisc.left-7}}px; top: -60px;">
+            <img src="images/disc.png" alt="" id="disc" style="left: {{navDisc.left}}px; top: -60px;">
         </nav>
     </div>
 
