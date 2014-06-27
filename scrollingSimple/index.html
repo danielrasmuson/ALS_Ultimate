@@ -11,19 +11,41 @@
 
     <script>
         function TodoCtrl($scope) {
-            $scope.navBar = {"one":{"left":20},
-                            "two":{"left":185},
-                            "three":{"left":330},
-                            "four":{"left":480},
-                            "five":{"left":623},
-                            "six":{"left":775}};
+            $scope.navBar = {"one":{"left":20,"href":"#text1"},
+                            "two":{"left":185,"href":"#text2"},
+                            "three":{"left":330,"href":"#text3"},
+                            "four":{"left":480,"href":"#text4"},
+                            "five":{"left":623,"href":"#text5"},
+                            "six":{"left":775,"href":"#text6"}};
             $scope.navDisc = {"left":$scope.navBar.one.left};
+            $scope.navClick = function(nav){
+                // alert(nav.left);
+                $scope.navDisc.left = nav.left;
+                document.location.href = nav.href;
+                // window.
+                // document.href.location = "#text3";
+            }
         } 
     </script>
 
 </head>
 
 <body ng-app class="loading">
+
+    
+<!--     <nav>
+        <div id="middle">
+            <ul>
+                <a href="#text1" onclick="clickNav1();"><li id="nav1">Tournament</li></a>
+                <a href="#text2" onclick="clickNav2();"><li id="nav2">Cause</li></a>
+                <a href="#text3" onclick="clickNav3();"><li id="nav3">Sponsors</li></a>
+                <a href="#text4" onclick="clickNav4();"><li id="nav4">Sign Up</li></a>
+                <a href="#text5" onclick="clickNav5();"><li id="nav5">About Us</li></a>
+                <div id="disc"><img src="img/discALSColor.png" alt="frisbee likes to fly"></div>
+            </ul>
+        </div>
+    </nav>  -->
+
     <div ng-controller="TodoCtrl">
         <nav style="postition: absolute">
             <div id="middle">
@@ -31,7 +53,7 @@
                     <img src="img/logoBanner.png" alt="" style="display: block;">
                     <div id="header">
                         <ul>
-                            <li id="{{nav}}" style="left: {{nav.left}}px" ng-repeat="nav in navBar" ng-click="navDisc.left = nav.left"></li>
+                            <li ng-repeat="nav in navBar" style="left: {{nav.left}}px" ng-click="navClick(nav)"></li>
                         </ul>
                         <img src="img/bar.png" alt="" id="bar" >
                         <img src="img/disc.png" alt="" id="disc" style="left: {{navDisc.left-7}}px;">
