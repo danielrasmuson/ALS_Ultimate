@@ -1,6 +1,6 @@
 function clickNav1(){
     // rotateAnimation("disc",1440);
-    document.getElementById("disc").style.left = "0%";
+    document.getElementById("disc").style.left = "1%";
 }
 function clickNav2(){
     document.getElementById("disc").style.left = "23%";
