@@ -175,7 +175,7 @@ iframe{
     background-image: url("../img/signUp.jpg");
 }
 #slide-7 .bcg {
-    background-image: url("../img/signUp.jpg");
+    background-image: url("../img/aboutUs.jpg");
 }
 
 #slide-1{
@@ -196,4 +196,8 @@ iframe{
     float: right;
     margin-top: 150px;
     line-height: 40px;
+}
+.middle{
+    display: block;
+    margin: auto;   
 }
