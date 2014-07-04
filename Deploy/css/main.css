@@ -11,7 +11,8 @@ textarea {
 }
 
 body {
-    font-family: 'futura';
+    /*font-family: 'futura';*/
+    font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
     /*font-family: futura;*/
     font-size: 1em;
     line-height: 1.4;
