@@ -156,24 +156,26 @@ iframe{
     padding-left: 120px;
 }
 #slide-1 .bcg {
-    background-image:url('../img/firstslide.jpg')
+    background-image:url('../img/catchBlackAndWhite.png');
+    /*background-image:url('../img/firstslide.png')*/
 }
 #slide-2 .bcg {
-    background-image:url('../img/theTournament.jpg')
+    background-image:url('../img/theTournament.jpg');
 }
 #slide-3 .bcg {
-    background-image:url('../img/theCause.jpg')
+    background-image:url('../img/theCause.jpg');
 }
 #slide-4 .bcg {
-    background-image:url('../img/sponsors.jpg')
+    background-image:url('../img/donations.jpg');
 }
 #slide-5 .bcg {
-    background-image:url('../img/donations.jpg')
+    background-image:url('../img/sponsors.jpg');
 }
 #slide-6 .bcg {
-    background-image: url("../img/signUp.png");
-    background-color: #EBCD9B;
-    background-size: auto 100%;
+    background-image: url("../img/signUp.jpg");
+}
+#slide-7 .bcg {
+    background-image: url("../img/signUp.jpg");
 }
 
 #slide-1{
