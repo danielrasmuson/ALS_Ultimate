@@ -1,5 +1,0 @@
-@todo - also a goal line to show how its going
-    maybe remormat to look like this
-    https://www.charitywater.org/donate/
-
-@todo - send nick animation for website

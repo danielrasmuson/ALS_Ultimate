@@ -1,0 +1,1971 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"src",
+				"srcEnable"
+			],
+			[
+				"button",
+				"buttonId"
+			],
+			[
+				"recording",
+				"recordingId"
+			],
+			[
+				"get",
+				"getBook"
+			],
+			[
+				"book",
+				"bookEnd"
+			],
+			[
+				"email",
+				"emailValue"
+			],
+			[
+				"Page",
+				"PageService"
+			],
+			[
+				"Pag",
+				"PageService"
+			],
+			[
+				"play",
+				"playAudio"
+			],
+			[
+				"page",
+				"pageNumber"
+			],
+			[
+				"getpage",
+				"getPageObject"
+			],
+			[
+				"pag",
+				"pageNumber"
+			],
+			[
+				"change",
+				"changePage"
+			],
+			[
+				"recor",
+				"recordButton"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"rec",
+				"recording"
+			],
+			[
+				"down",
+				"downloadLink"
+			],
+			[
+				"dow",
+				"downloadLink"
+			],
+			[
+				"ul",
+				"ulList"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"padin",
+				"padding"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"decode",
+				"json_decode"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"evenbr",
+				"eventBrite"
+			],
+			[
+				"even",
+				"eventBriteController"
+			],
+			[
+				"gree",
+				"greetingService"
+			],
+			[
+				"Gre",
+				"GreetingController"
+			],
+			[
+				"paddi",
+				"padding-bottom"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"lsit",
+				"list-style"
+			],
+			[
+				"inline",
+				"inline-block  (value)"
+			],
+			[
+				"background",
+				"background-size"
+			],
+			[
+				"magi",
+				"margin"
+			],
+			[
+				"marign",
+				"margin"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"on",
+				"onclick	Attr"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"transt",
+				"transition:   (property)"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"magin",
+				"margin-bottom"
+			],
+			[
+				"list-st",
+				"list-style-type"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"border",
+				"border-left"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"pd",
+				"padding-top"
+			],
+			[
+				"bak",
+				"background-color"
+			],
+			[
+				"border-left",
+				"border-left-width"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"el",
+				"elementID"
+			],
+			[
+				"deg",
+				"degrees"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"style",
+				"font-style"
+			],
+			[
+				"sty",
+				"font-style"
+			],
+			[
+				"fone",
+				"font-size"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"task",
+				"taskID"
+			],
+			[
+				"tas",
+				"taskStart"
+			],
+			[
+				"url",
+				"url"
+			],
+			[
+				"hist",
+				"historyItems"
+			],
+			[
+				"elem",
+				"getElementById  (function)"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"prof",
+				"profileLink"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"rb",
+				"rgba()"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"bo",
+				"border-color"
+			],
+			[
+				"bord",
+				"border-color"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"pso",
+				"position"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"backgrou",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "css/main.css",
+			"settings":
+			{
+				"buffer_size": 3405,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/User/nodejs2.sublime-build",
+	"command_palette":
+	{
+		"height": 380.0,
+		"selected_items":
+		[
+			[
+				"close",
+				"Project: Close"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git check",
+				"Git: Checkout"
+			],
+			[
+				"git che",
+				"Git: Checkout"
+			],
+			[
+				"git chec",
+				"Git: Checkout"
+			],
+			[
+				"checkout",
+				"Git: Checkout Commit"
+			],
+			[
+				"git checkout",
+				"Git: Checkout Commit"
+			],
+			[
+				"git checko",
+				"Git: Checkout Commit"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"brow",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"bor",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"sftp show",
+				"SFTP: Show Panel"
+			],
+			[
+				"uplad",
+				"SFTP: Upload Folder"
+			],
+			[
+				"git statu",
+				"Git: Status"
+			],
+			[
+				"remote",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"user ",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"browse",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"brwose",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"brwo",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"browse ",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"bro",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"browse remo",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"del",
+				"File: Delete"
+			],
+			[
+				"ren",
+				"File: Rename"
+			],
+			[
+				"brows",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"duplic",
+				"File: Duplicate"
+			],
+			[
+				"isntal",
+				"Package Control: Install Package"
+			],
+			[
+				"dupl",
+				"File: Duplicate"
+			],
+			[
+				"de",
+				"ANF: Delete File"
+			],
+			[
+				"upal",
+				"SFTP: Upload Folder"
+			],
+			[
+				"borw",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"upl",
+				"SFTP: Upload Open Files"
+			],
+			[
+				"upla",
+				"SFTP: Upload Open Files"
+			],
+			[
+				"git sta",
+				"Git: Stash"
+			],
+			[
+				"upload",
+				"SFTP: Upload Open Files"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"brremote",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"keybin",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"show",
+				"SFTP: Show Panel"
+			],
+			[
+				"sftp",
+				"SFTP: Sync Local -> Remote…"
+			],
+			[
+				"javas",
+				"Javascript Beautify"
+			],
+			[
+				"dle",
+				"File: Delete"
+			],
+			[
+				"html bea",
+				"HTMLBeautify"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"javascript bea",
+				"Javascript Beautify"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"beaut",
+				"HTMLBeautify"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Evernote: ",
+				"Evernote: New empty note"
+			],
+			[
+				"Evernote: new",
+				"Evernote: New empty note"
+			],
+			[
+				"git ",
+				"Git: Status"
+			],
+			[
+				"up",
+				"SFTP: Upload File"
+			],
+			[
+				"snip",
+				"SnippetMaker: Edit Snippet"
+			],
+			[
+				"upad",
+				"SFTP: Upload File"
+			],
+			[
+				"uplo",
+				"SFTP: Upload Folder"
+			],
+			[
+				"makesn",
+				"SnippetMaker: Edit Snippet"
+			],
+			[
+				"git log",
+				"Git: Log"
+			],
+			[
+				"git",
+				"Git: Version"
+			],
+			[
+				"mak",
+				"SnippetMaker: Edit Snippet"
+			],
+			[
+				"rean",
+				"File: Rename"
+			],
+			[
+				"sftp bro",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"dupla",
+				"File: Duplicate"
+			],
+			[
+				"rea",
+				"File: Rename"
+			],
+			[
+				"uolad",
+				"SFTP: Upload File"
+			],
+			[
+				"u",
+				"SFTP: Upload File"
+			],
+			[
+				"upald",
+				"SFTP: Upload File"
+			],
+			[
+				"dup",
+				"File: Duplicate"
+			],
+			[
+				"upa",
+				"SFTP: Upload File"
+			],
+			[
+				"upd",
+				"SFTP: Upload File"
+			],
+			[
+				"browe",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"bros",
+				"SFTP: Browse Server…"
+			],
+			[
+				"brose",
+				"SFTP: Browse Server…"
+			],
+			[
+				"sftp remote",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"snippet",
+				"SnippetMaker: Edit Snippet"
+			],
+			[
+				"make sni",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"make",
+				"SnippetMaker: Edit Snippet"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"git satt",
+				"Git: Status"
+			],
+			[
+				"re",
+				"File: Rename"
+			],
+			[
+				"snipmake",
+				"SnippetMaker: Edit Snippet"
+			],
+			[
+				"html",
+				"Set Syntax: HTML5"
+			],
+			[
+				"edit sn",
+				"SnippetMaker: Edit Snippet"
+			],
+			[
+				"open folder",
+				"SublimeREPL: SBT for opened folder"
+			],
+			[
+				"set syn",
+				"Set Syntax: HTML"
+			],
+			[
+				"statu",
+				"Git: Status"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"edit",
+				"SFTP: Edit Server…"
+			],
+			[
+				"makes",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"maken",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"sni",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"make sn",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"snipet",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"makesni",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"new sn",
+				"z:AAAPackageDev: New Raw Snippet"
+			],
+			[
+				"reanme",
+				"File: Rename"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"enabl",
+				"Package Control: Enable Package"
+			],
+			[
+				"gist",
+				"Gist: Open Gist"
+			],
+			[
+				"open files",
+				"SFTP: Upload Open Files"
+			],
+			[
+				"sync both",
+				"SFTP: Sync Both Directions…"
+			],
+			[
+				"sftp co",
+				"SFTP: Upload VCS Changed Files"
+			],
+			[
+				"sftp diff",
+				"SFTP: Diff Remote File"
+			],
+			[
+				"sftp ",
+				"SFTP: Sync Local -> Remote…"
+			],
+			[
+				"sync loca",
+				"SFTP: Sync Local -> Remote…"
+			],
+			[
+				"gisto",
+				"Gist: Open Gist"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"enab",
+				"Set Syntax: NAnt Build File"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML5"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"lint",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"diff",
+				"FileDiffs: Menu"
+			],
+			[
+				"git diff",
+				"Git: Diff"
+			],
+			[
+				"linter",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"html ang",
+				"Set Syntax: HTML (Angular.js)"
+			],
+			[
+				"rn",
+				"File: Rename"
+			],
+			[
+				"gist ope",
+				"Gist: Open Gist"
+			],
+			[
+				"htmlan",
+				"Set Syntax: HTML (Angular.js)"
+			],
+			[
+				"plain",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"dja",
+				"Set Syntax: Python Django"
+			],
+			[
+				"user",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"command",
+				"Text Pastry: Command Line"
+			],
+			[
+				"color",
+				"Color Picker"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 279.0,
+		"history":
+		[
+			"os.system(\"nodejs\")",
+			"import os",
+			"nodejs",
+			"50/3",
+			"for i in range(0,10):",
+			"print \"hello\"",
+			"hello",
+			"print(\"hello\")",
+			"cd ..",
+			"ls",
+			"node \\Users\\Daniel\\Desktop\\Everbrite API\\test.js",
+			"node \"C:\\Users\\Daniel\\Desktop\\Everbrite API\\test.js\"",
+			"node C:\\Users\\Daniel\\Desktop\\Everbrite API\\test.js",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"https://sublime.wbond.net/installation",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/scrollingSimple/index.html",
+		"/C/Users/Daniel/Dropbox/Apps/Day One/Journal.dayone/entries/3EDAF6D20F39464A94093A6BA24E9F47.doentry",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/scrollingSimple/css/nav.css",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/scrollingSimple/js/navClick.js",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/index.html",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/scrollingSimple/ALS_Ultimate.sublime-project",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/scrollingSimple/css/normalize.css",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/sponsor.html",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/scrollingSimple/css/main.css",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/navBarTest/review.php",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/scrollingSimple/js/angular.min.js",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/aboutALS.html",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/navBarTest/index.html",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/navBarTest/js/angular.min.js",
+		"/C/Users/Daniel/Documents/GitHub/ALS_Ultimate/Deploy/navBarTest/__init__.py",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/index.html",
+		"/C/Users/Daniel/Desktop/LinkedinTechWeek/Carry.txt",
+		"/C/Users/Daniel/Desktop/LinkedinTechWeek/John.txt",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/audio/10831011/catandhat/Page_1.mp3",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/php/saveEmail.php",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/audio/96348314/catandhat/Page_1.mp3",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/audio/80534712/catandhat/Page_1.mp3",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/php/numberUsers.php",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/img/Books/catAndHat/newtext.txt",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/sftp-config.json",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/js/recordmp3.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/img/nav/new.txt",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/narrate.html",
+		"/C/Users/Daniel/Documents/GitHub/Slide_Alive/Deploy/review.php",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/js/narrate.js",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/SFTP.errors.log",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/js/NavService.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/js/PageService.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/js/UrlParamService.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/php/upload.php",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/js/mp3Worker.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/css/bookshelf.css",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/css/style.css",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/bookshelf.html",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/js/bookshelf.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/js/view.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/view.html",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/js/mode.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/mode.html",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/test.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/saveEmail.php",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/js/uploadTest.html",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/js/upload.php",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/talkToUpload.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/talkToUpload.html",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/css/login.css",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/login.html",
+		"/C/Users/Daniel/Documents/GitHub/Slide_Alive/Deploy/create.php",
+		"/C/Users/Daniel/Documents/GitHub/Slide_Alive/Deploy/css/create.css",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/modeTest.css",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/modeTest.html",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/img/nav/text.txt",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/css/view.css",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/audio/gtfts/new.txt",
+		"/C/Users/Daniel/Documents/GitHub/Slide_Alive/Deploy/css/review.css",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/js/angular.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/js/jquery-1.11.0.min.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/.gitignore",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/js/pageService.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/audio/gtfts/Page_1.mp3",
+		"/C/Users/Daniel/Desktop/angular-day-master/src/app/views.backend.coffee",
+		"/C/Users/Daniel/Desktop/angular-day-master/src/eventBrite/myinput.html",
+		"/C/Users/Daniel/Desktop/angular-day-master/src/eventBrite/eventBrite.html",
+		"/C/Users/Daniel/Desktop/angular-day-master/src/eventBrite/myinput.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/img/text.txt",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/recordTest.html",
+		"/C/Users/Daniel/Desktop/angular-day-master/src/reportCard/report-card.html",
+		"/C/Users/Daniel/Desktop/angular-day-master/src/reportCard/reportCardRoutes.coffee",
+		"/C/Users/Daniel/Desktop/angular-day-master/README.md",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/recordmp3.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/img/test.txt",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/Daniel/Desktop/tebowThanks.txt",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/AngularJS_HTML__InstantFilter.sublime-snippet",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/CSS__Normalize.sublime-snippet",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/CSS_tiltEffect.sublime-snippet",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/ChromeExtension_JSON__manifest.sublime-snippet",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/audio/gtfts/rename.py",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/Python__loopThroughFilesRename.sublime-snippet",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/Python__docstring.sublime-snippet",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/Python__time.sublime-snippet",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/img/Books/gtfts/rename.py",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/Python__pythonOpen.sublime-snippet",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/css/index.css",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/test.html",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/notes.txt",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/index2.html",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/js/index.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/img/Books/new.txt",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/img/Books/rename.py",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/img/logo.png",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/New_UI/test.txt",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/Recordmp3js-master/css/style.css",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/index.html",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/js/narrate.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/narrate.html",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/recordmp3.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/index2.html",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/recordTest.html",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/css/index.css",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/Recordmp3js-master/js/upload.php",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/Recordmp3js-master/js/uploadTest.html",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/Recordmp3js-master/recordmp3.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/Recordmp3js-master/index.html",
+		"/C/Users/Daniel/Desktop/index.html",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/js/main.js",
+		"/C/Users/Daniel/Desktop/Recordmp3js-master/index.html",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/js/recorderjs/recorder.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/notes.txt",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/test.html",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/js/audiodisplay.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/js/recorder.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/js/index.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/img/Books/rename.py",
+		"/C/Users/Daniel/Desktop/Book covers/rename.py",
+		"/C/Users/Daniel/Desktop/Recorderjs-master/example_simple_exportwav.html",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/Recorderjs-master/recorder.js",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/audioTest.html",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/css/style.css",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/catAndHat/Books/rename.py",
+		"/C/Users/Daniel/Documents/GitHub/RaRaReader/RaRaReaderOnlineModule/css/__init__.py",
+		"/C/Users/Daniel/Desktop/angular-day-master/src/index_angular.html"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			"",
+			"src/eventBrite",
+			"",
+			"Recordmp3js-master/js/",
+			"",
+			"src/everntBrite",
+			"",
+			"src/eventBrite",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"repeat",
+			"left",
+			"top",
+			"images",
+			"saveEmail",
+			"}}}}\"",
+			"{{{{",
+			"left",
+			"src}}",
+			"src",
+			"srcDisable",
+			"srcEnable",
+			"}}\"  alt",
+			"email",
+			"home",
+			"right",
+			"left",
+			"getBook",
+			"redirect",
+			"click",
+			"Grey",
+			"home",
+			"play",
+			"left",
+			"leftGry",
+			"uploadAudio",
+			"audio",
+			"bookName",
+			"upload",
+			"find",
+			"getBook",
+			"saveEmail.php",
+			"upload.php",
+			"getmp3",
+			"mp3Name",
+			"mp3name",
+			"mp3Name",
+			"fd",
+			"path/to/directory",
+			"btn-block\"",
+			"Block lev",
+			"Block",
+			"100",
+			" ",
+			"dark",
+			"folderName",
+			"getmp3",
+			"UrlParamService",
+			"ModeController",
+			"html",
+			"Page",
+			"next",
+			"NarratorController",
+			"pageService",
+			"pageNumber",
+			"pageService",
+			"upload",
+			"            playAudio();\n",
+			"scope.pa",
+			"previousPage",
+			"number",
+			"pageNumber",
+			"next",
+			"previousPage",
+			"nextPage",
+			"setPageNumber",
+			"GetName",
+			"+",
+			"filename",
+			"upload",
+			"page",
+			"notifications",
+			"myinput",
+			"notifications",
+			"$in",
+			"$inject",
+			"myinput",
+			"__log",
+			"Converting to Mp3",
+			"__log",
+			"recordbutton",
+			"createDownloadLink",
+			"ctrl+s\"",
+			"ctrl+s",
+			"rrentTime = 0;",
+			"mySubmit",
+			"New_UI",
+			"img/",
+			"imagesController",
+			"url",
+			"coverName",
+			"src",
+			"image",
+			"imagesController",
+			"booksController",
+			"imagesController",
+			"\\",
+			"currentTime",
+			"div",
+			"num",
+			" var audio = document.getElementsByTagName(\"audio\");",
+			"Audio_",
+			"New_UI",
+			"narrate.html",
+			"src",
+			"src:\"images",
+			"src:\"images_1.jpeg\",",
+			"url",
+			"20-children-book-covers-gone-wrong-photos.jpg",
+			"alert",
+			"img/",
+			"uploadAudio",
+			"converting",
+			"__lo",
+			"Converting to Mp3",
+			"__log",
+			"this",
+			"createDownloadLink",
+			"o_daniel_reco",
+			"recording",
+			"starting",
+			"ng-cli",
+			"ng",
+			"stopRecording",
+			"this",
+			"onclick",
+			"button",
+			"this"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>",
+			"",
+			"<link rel=\"stylesheet\" type=\"text/css\" href=\"css/style.css\">",
+			"                    <a href=\"index.html\"><li>Home</li></a>\n                    <a href=\"chapters.html\"><li>Our Chapters</li></a>\n                    <a href=\"donations.html\"><li>Donations</li></a>\n                    <a href=\"award.html\"><li>Award</li></a>\n                    <a href=\"contact.html\"><li>Contact Us</li></a>\n                    <a href=\"about.html\"><li>About Us</li></a>",
+			"                    <li><a href=\"index.html\">Home</a></li>\n                    <li><a href=\"chapters.html\">Our Chapters</a></li>\n                    <li><a href=\"donations.html\">Donations</a></li>\n                    <li><a href=\"award.html\">Award</a></li>\n                    <li><a href=\"contact.html\">Contact Us</a></li>\n                    <li><a href=\"about.html\">About Us</a></li>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3405,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3021,
+								3021
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"SideBarAutoAddFoldersForOpenedFiles": 1,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"vintage":
+							{
+								"action": null,
+								"action_count": "",
+								"capture_register": false,
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 14
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 2667.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"vintage":
+							{
+								"action": null,
+								"action_count": "",
+								"capture_register": false,
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 347.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git-checkout":
+	{
+		"height": 130.0
+	},
+	"output.git-commit":
+	{
+		"height": 130.0
+	},
+	"output.git-push":
+	{
+		"height": 130.0
+	},
+	"output.sftp":
+	{
+		"height": 130.0
+	},
+	"project": "ALS_Ultimate.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"nav",
+				"scrollingSimple\\css\\nav.css"
+			],
+			[
+				"ind",
+				"scrollingSimple\\index.html"
+			],
+			[
+				"navclci",
+				"scrollingSimple\\js\\navClick.js"
+			],
+			[
+				"main",
+				"scrollingSimple\\css\\main.css"
+			],
+			[
+				"angulr",
+				"Deploy\\navBarTest\\js\\angular.min.js"
+			],
+			[
+				"in",
+				"index.html"
+			],
+			[
+				"save",
+				"php\\saveEmail.php"
+			],
+			[
+				"pageser",
+				"js\\PageService.js"
+			],
+			[
+				"url",
+				"js\\UrlParamService.js"
+			],
+			[
+				"page",
+				"js\\PageService.js"
+			],
+			[
+				"recmp",
+				"js\\recordmp3.js"
+			],
+			[
+				"bokocss",
+				"css\\bookshelf.css"
+			],
+			[
+				"book",
+				"bookshelf.html"
+			],
+			[
+				"sytle",
+				"css\\style.css"
+			],
+			[
+				"re",
+				"js\\recordmp3.js"
+			],
+			[
+				"narrjs",
+				"js\\narrate.js"
+			],
+			[
+				"narr",
+				"narrate.html"
+			],
+			[
+				"nar",
+				"narrate.html"
+			],
+			[
+				"view",
+				"js\\view.js"
+			],
+			[
+				"narrate",
+				"js\\narrate.js"
+			],
+			[
+				"mp3js",
+				"js\\recordmp3.js"
+			],
+			[
+				"mp3",
+				"js\\mp3Worker.js"
+			],
+			[
+				"php",
+				"php\\upload.php"
+			],
+			[
+				"par",
+				"js\\UrlParamService.js"
+			],
+			[
+				"param",
+				"js\\UrlParamService.js"
+			],
+			[
+				"mod",
+				"js\\mode.js"
+			],
+			[
+				"mode",
+				"mode.html"
+			],
+			[
+				"modhtm",
+				"mode.html"
+			],
+			[
+				"narra",
+				"narrate.html"
+			],
+			[
+				"urlpa",
+				"js\\UrlParamService.js"
+			],
+			[
+				"bok",
+				"bookshelf.html"
+			],
+			[
+				"uplad",
+				"js\\upload.php"
+			],
+			[
+				"narrajs",
+				"js\\narrate.js"
+			],
+			[
+				"login",
+				"css\\login.css"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"syle",
+				"css\\style.css"
+			],
+			[
+				"narrat",
+				"js\\narrate.js"
+			],
+			[
+				"narrhtml",
+				"narrate.html"
+			],
+			[
+				"books",
+				"css\\bookshelf.css"
+			],
+			[
+				"viewhtml",
+				"view.html"
+			],
+			[
+				"u",
+				"js\\upload.php"
+			],
+			[
+				"boko",
+				"bookshelf.html"
+			],
+			[
+				"js",
+				"js\\bookshelf.js"
+			],
+			[
+				"upl",
+				"js\\upload.php"
+			],
+			[
+				"service",
+				"js\\UrlParamService.js"
+			],
+			[
+				"viewjs",
+				"js\\view.js"
+			],
+			[
+				"na",
+				"narrate.html"
+			],
+			[
+				"najs",
+				"js\\narrate.js"
+			],
+			[
+				"ser",
+				"js\\pageService.js"
+			],
+			[
+				"viw",
+				"js\\view.js"
+			],
+			[
+				"uploadtest",
+				"RaRaReader\\js\\uploadTest.html"
+			],
+			[
+				"recordte",
+				"RaRaReader\\recordTest.html"
+			],
+			[
+				"booksjs",
+				"js\\bookshelf.js"
+			],
+			[
+				"booksehcss",
+				"css\\bookshelf.css"
+			],
+			[
+				"bookjs",
+				"js\\bookshelf.js"
+			],
+			[
+				"style",
+				"css\\style.css"
+			],
+			[
+				"index",
+				"css\\index.css"
+			],
+			[
+				"log",
+				"login.html"
+			],
+			[
+				"test",
+				"test.html"
+			],
+			[
+				"notes",
+				"notes.txt"
+			],
+			[
+				"text",
+				"img\\test.txt"
+			],
+			[
+				"new",
+				"img\\Books\\new.txt"
+			],
+			[
+				"indexjs",
+				"js\\index.js"
+			],
+			[
+				"lo",
+				"login.html"
+			],
+			[
+				"record",
+				"recordmp3.js"
+			],
+			[
+				"sft",
+				"sftp-config.json"
+			],
+			[
+				"recor",
+				"recordmp3.js"
+			],
+			[
+				"inde2",
+				"index2.html"
+			],
+			[
+				"rec",
+				"recordTest.html"
+			],
+			[
+				"rean",
+				"img\\Books\\rename.py"
+			],
+			[
+				"indehtml",
+				"index.html"
+			],
+			[
+				"aud",
+				"audioTest.html"
+			],
+			[
+				"sty",
+				"css\\style.css"
+			],
+			[
+				"engin",
+				"js\\engine.js"
+			],
+			[
+				"rena",
+				"img\\Books\\rename.py"
+			],
+			[
+				"ren",
+				"catAndHat\\Books\\rename.py"
+			],
+			[
+				"py",
+				"catAndHat\\rename.py"
+			],
+			[
+				"ang",
+				"RaRaReaderOnlineModule\\angularTest.html"
+			],
+			[
+				"anguanim",
+				"RaRaReaderOnlineModule\\js\\angular-animate.min.js"
+			],
+			[
+				"angulartest",
+				"RaRaReaderOnlineModule\\angularTest.html"
+			],
+			[
+				"img",
+				"img"
+			],
+			[
+				"ut",
+				"Untitled-1.html"
+			],
+			[
+				"config",
+				"www\\config.xml"
+			],
+			[
+				"indxe",
+				"www\\index.html"
+			],
+			[
+				"data",
+				"deploy\\databaseConnect.php"
+			],
+			[
+				"questino",
+				"deploy\\questions.html"
+			],
+			[
+				"todo",
+				"deploy\\todo.txt"
+			],
+			[
+				"question",
+				"deploy\\questions2.html"
+			],
+			[
+				"everbrite.js",
+				"angular-day-master\\src\\eventBrite\\eventBrite.js"
+			],
+			[
+				"databa",
+				"database2.php"
+			],
+			[
+				"styel",
+				"css\\style.css"
+			],
+			[
+				"con",
+				"contact.html"
+			],
+			[
+				"cont",
+				"contact.html"
+			],
+			[
+				"conta",
+				"contact.html"
+			],
+			[
+				"donat",
+				"donate.html"
+			],
+			[
+				"dont",
+				"donate.html"
+			],
+			[
+				"eve",
+				"events.html"
+			],
+			[
+				"doante",
+				"donate.html"
+			],
+			[
+				"even",
+				"events.html"
+			],
+			[
+				"sytl",
+				"css\\style.css"
+			],
+			[
+				"about",
+				"about.html"
+			],
+			[
+				"awa",
+				"award.html"
+			],
+			[
+				"chapter",
+				"chapters.html"
+			],
+			[
+				"head",
+				"js\\extra\\header.html"
+			],
+			[
+				"header",
+				"js\\header.js"
+			],
+			[
+				"everbrite.html",
+				"src\\eventBrite\\eventBrite.html"
+			],
+			[
+				"listofcolor",
+				"listOfColorsObj.html"
+			],
+			[
+				"bind",
+				"binding.html"
+			],
+			[
+				"views",
+				"polls\\views.py"
+			],
+			[
+				"indx",
+				"polls\\templates\\polls\\index.html"
+			],
+			[
+				"urls",
+				"polls\\urls.py"
+			],
+			[
+				"base",
+				"templates\\admin\\base_site.html"
+			],
+			[
+				"setting",
+				"mysite\\settings.py"
+			],
+			[
+				"settings",
+				"mysite\\settings.py"
+			],
+			[
+				"model",
+				"polls\\models.py"
+			],
+			[
+				"manag",
+				"manage.py"
+			],
+			[
+				"admin",
+				"polls\\admin.py"
+			],
+			[
+				"olls",
+				"polls\\models.py"
+			],
+			[
+				"modl",
+				"polls\\models.py"
+			],
+			[
+				"sett",
+				"mysite\\settings.py"
+			],
+			[
+				"pollsmode",
+				"polls\\models.py"
+			],
+			[
+				"settin",
+				"mysite\\settings.py"
+			],
+			[
+				"de",
+				"partials\\details.html"
+			],
+			[
+				"boo",
+				"css\\bootstrap.css"
+			],
+			[
+				"deal",
+				"partials\\details.html"
+			],
+			[
+				"lis",
+				"partials\\list.html"
+			],
+			[
+				"html",
+				"frontend\\app\\index.html"
+			],
+			[
+				"rev",
+				"Deploy\\review.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"ra",
+				"C:\\Users\\Daniel\\Documents\\GitHub\\RaRaReader\\RaRaReader.sublime-project"
+			],
+			[
+				"ad",
+				"C:\\Users\\Daniel\\Documents\\GitHub\\doorknob\\adventureQuest.sublime-project"
+			],
+			[
+				"rea",
+				"C:\\Users\\Daniel\\Documents\\GitHub\\RaRaReader\\RaRaReader.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+		"_vintageous_last_buffer_search": "pos",
+		"_vintageous_last_char_search_command": "vi_f",
+		"_vintageous_last_character_search": "n",
+		"_vintageous_reset_during_init": true,
+		"vintage":
+		{
+			"_cmdline_cd": "C:\\Users\\Daniel\\Dropbox\\Apps\\Day One\\Journal.dayone\\entries"
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 174.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
