@@ -43,11 +43,8 @@
                             }};
             $scope.navDisc = {"left":$scope.navBar.one.left};
             $scope.navClick = function(nav){
-                // alert(nav.left);
                 $scope.navDisc.left = nav.left;
                 document.location.href = nav.href;
-                // window.
-                // document.href.location = "#text3";
             }
         } 
     </script>
@@ -55,20 +52,6 @@
 </head>
 
 <body ng-app class="loading">
-
-    
-<!--     <nav>
-        <div id="middle">
-            <ul>
-                <a href="#text1" onclick="clickNav1();"><li id="nav1">Tournament</li></a>
-                <a href="#text2" onclick="clickNav2();"><li id="nav2">Cause</li></a>
-                <a href="#text3" onclick="clickNav3();"><li id="nav3">Sponsors</li></a>
-                <a href="#text4" onclick="clickNav4();"><li id="nav4">Sign Up</li></a>
-                <a href="#text5" onclick="clickNav5();"><li id="nav5">About Us</li></a>
-                <div id="disc"><img src="img/discALSColor.png" alt="frisbee likes to fly"></div>
-            </ul>
-        </div>
-    </nav>  -->
     <div ng-controller="TodoCtrl">
         <nav style="postition: absolute">
             <div id="middle">
@@ -90,11 +73,24 @@
     <main>
         <section id="slide-1" class="homeSlide">
             <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
+                <div class="center">
+                    <img src="img/logo.png" alt="" style="margin-top: 100px;">
+                    <div id="slide1Text">
+                        <span style="font-size: 49px;">ULTIMATE IMPACT</span>
+                        <hr>
+                        an Ultimate Hat Tournament <br>
+                        raising money for ALS
+                        <hr>
+                        August 23, 2014
+                        <hr>
+                        Field Names, Maplewood
+                    </div>
+                </div>
             </div>
         </section>
 
         <div class="hsContainer">
-            <div class="slideText" id="text1">
+            <div class="center" id="text1">
                 <h2>About the Tournament:</h2>
                 <ul>
                     <li>A one day ultimate hat tournament to raise money for ALS</li>
@@ -104,7 +100,7 @@
                     <li>TODO: This address</li>
                 </ul>
 
-                Tired of playing ultimate with no purpose or cause? Think that the spirit of the game is getting lost behind all your national championship medals? Come join us for a one-day hat tournament filled with fun, a raffle, food, sweet merchandise, and a chance to give back to the community by raising money for a great cause. Invite your friends, coworkers, family, or the friendly person you just met while waiting in line for coffee. no experience required.
+                Tired of playing ultimate with no purpose or cause? Come join us for a one-day hat tournament filled with fun, a raffle, food, sweet merchandise, and a chance to give back to the community by raising money for a great cause. Invite your friends, coworkers, family, or the friendly person you just met while waiting in line for coffee. no experience required.
             </div>
         </div>
 
@@ -114,7 +110,7 @@
         </section>
 
         <div class="hsContainer">
-            <div class="slideText" id="text2">
+            <div class="center" id="text2">
                 <h2>About ALS</h2>
                 Amyotrophic lateral sclerosis (ALS) is a progressive neurodegenerative disease that affects nerve cells in the brain and the spinal cord. Motor neurons reach from the brain to the spinal cord and from the spinal cord to the muscles throughout the body. The progressive degeneration of the motor neurons in ALS eventually leads to their death. When the motor neurons die, the ability of the brain to initiate and control muscle movement is lost. With voluntary muscle action progressively affected, patients in the later stages of the disease may become totally paralyzed.
 
@@ -128,7 +124,7 @@
         </section>
 
         <div class="hsContainer">
-            <div class="slideText" id="text3">
+            <div class="center" id="text3">
                 want to sponsor us? contact us....
                 <br>
                 <br>(Still not convinced? watch this video to make you feel better?)**not sure what we could put here, but thought it might be cool if we had something funny**
@@ -146,7 +142,7 @@
  -->
 
         <div class="hsContainer">
-            <div class="slideText" id="text4">
+            <div class="center" id="text4">
                 <iframe src="https://docs.google.com/forms/d/1GQ3mbnBNkNrWoAbgme_Xww3NEZq0RW0HrUVpMqnTE-A/viewform?embedded=true" width="760" height="855" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
             </div>
         </div>
@@ -156,7 +152,7 @@
         </section>
 
         <div class="hsContainer">
-            <div class="slideText" id="text5">
+            <div class="center" id="text5">
                 <h2>About Us</h2>
 
                 <h3>Nick Ladas</h3>

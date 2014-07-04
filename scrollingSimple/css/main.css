@@ -143,7 +143,7 @@ main {
     padding-top: 15px;
     padding-bottom: 15px; 
 }
-.slideText{
+.center{
     width: 950px;
     margin-right: auto;
     margin-left: auto;
@@ -156,8 +156,7 @@ iframe{
     padding-left: 120px;
 }
 #slide-1 .bcg {
-    background-image:url('../img/tournament.jpg')
-
+    background-image:url('../img/catchBlackAndWhite.png')
 }
 #slide-2 .bcg {
     background-image:url('../img/theCause.jpg')
@@ -175,4 +174,24 @@ iframe{
     background-image: url("../img/logo.png");
     background-color: #EBCD9B;
     background-size: auto 100%;
+}
+
+#slide-1{
+    color: white;
+    font-size: 38px;
+}
+#slide-1 hr{
+    color: white;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    height: 3px;
+    margin-top: 10px;
+}
+#slide1Text{
+    width: 450px;
+    float: right;
+    margin-top: 150px;
+    line-height: 40px;
 }
