@@ -59,5 +59,11 @@ nav li{
 #header{
     position: absolute;
     right: 0;
-    top: 20px;
+    top: 10px;
+}
+#bannerText{
+    font-weight: bold;
+    width: 150px;
+    position: fixed;
+    margin-top: 40px;
 }

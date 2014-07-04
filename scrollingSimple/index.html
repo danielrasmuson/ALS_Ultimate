@@ -11,12 +11,36 @@
 
     <script>
         function TodoCtrl($scope) {
-            $scope.navBar = {"one":{"left":20,"href":"#text1"},
-                            "two":{"left":185,"href":"#text2"},
-                            "three":{"left":330,"href":"#text3"},
-                            "four":{"left":480,"href":"#text4"},
-                            "five":{"left":623,"href":"#text5"},
-                            "six":{"left":775,"href":"#text6"}};
+            $scope.navBar = {"one":{
+                                "left":20,
+                                "href":"#text1",
+                                "text":"The Tournament"
+                            },
+                            "two":{
+                                "left":185,
+                                "href":"#text2",
+                                "text":"The Cause"
+                            },
+                            "three":{
+                                "left":330,
+                                "href":"#text3",
+                                "text":"Donations"
+                            },
+                            "four":{
+                                "left":480,
+                                "href":"#text4",
+                                "text":"Sponsors"
+                            },
+                            "five":{
+                                "left":623,
+                                "href":"#text5",
+                                "text":"Sign Up"
+                            },
+                            "six":{
+                                "left":775,
+                                "href":"#text6",
+                                "text":"About Us"
+                            }};
             $scope.navDisc = {"left":$scope.navBar.one.left};
             $scope.navClick = function(nav){
                 // alert(nav.left);
@@ -45,7 +69,6 @@
             </ul>
         </div>
     </nav>  -->
-
     <div ng-controller="TodoCtrl">
         <nav style="postition: absolute">
             <div id="middle">
@@ -53,7 +76,9 @@
                     <img src="img/logoBanner.png" alt="" style="display: block;">
                     <div id="header">
                         <ul>
-                            <li ng-repeat="nav in navBar" style="left: {{nav.left}}px" ng-click="navClick(nav)"></li>
+                            <li ng-repeat="nav in navBar" style="left: {{nav.left}}px" ng-click="navClick(nav)">
+                                <div id="bannerText">{{nav.text}}</div>
+                            </li>
                         </ul>
                         <img src="img/bar.png" alt="" id="bar" >
                         <img src="img/disc.png" alt="" id="disc" style="left: {{navDisc.left-7}}px;">
