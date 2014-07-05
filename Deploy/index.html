@@ -7,122 +7,15 @@
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
         <!-- <script type="text/javascript" src="js/navClick.js"></script> -->
         <script src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/nav.js"></script>
+
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        
+
         <link rel="stylesheet" href="css/nav.css">
-
-        <script>
-            // needed for adjusting for the header height
-            function GetScreenCordinates(obj) {
-                    var p = {};
-                    p.x = obj.offsetLeft;
-                    p.y = obj.offsetTop;
-                    while (obj.offsetParent) {
-                        p.x = p.x + obj.offsetParent.offsetLeft;
-                        p.y = p.y + obj.offsetParent.offsetTop;
-                        if (obj == document.getElementsByTagName("body")[0]) {
-                            break;
-                        }
-                        else {
-                            obj = obj.offsetParent;
-                        }
-                    }
-                    return p;
-                }
-
-            function TodoCtrl($scope) {
-                $navBarHeight = 84;
-                $scope.navBar = {"one":{
-                                    "left":20,
-                                    "href":"slide-2",
-                                    "text":"Tournament"
-                                },
-                                "two":{
-                                    "left":185,
-                                    "href":"slide-3",
-                                    "text":"The Cause"
-                                },
-                                "three":{
-                                    "left":330,
-                                    "href":"slide-4",
-                                    "text":"Donations"
-                                },
-                                "four":{
-                                    "left":480,
-                                    "href":"slide-5",
-                                    "text":"Sponsors"
-                                },
-                                "five":{
-                                    "left":623,
-                                    "href":"slide-6",
-                                    "text":"Sign Up"
-                                },
-                                "six":{
-                                    "left":775,
-                                    "href":"slide-7",
-                                    "text":"About Us"
-                                }};
-                $scope.navDisc = {"left":$scope.navBar.one.left};
-                $scope.navClick = function(nav){
-                    $scope.navDisc.left = nav.left;
-
-                    var scrollY = GetScreenCordinates(document.getElementById(nav.href)).y;
-                    scrollY -= 84;
-                    window.scrollTo(0,scrollY);
-                }
-                // var nextSlideIndex = 1;
-                var slides = [
-                        {id:"slide-2",name:"one"},
-                        {id:"slide-3",name:"two"},
-                        {id:"slide-4",name:"three"},
-                        {id:"slide-5",name:"four"},
-                        {id:"slide-6",name:"five"},
-                        {id:"slide-7",name:"six"}
-                ];
-                function getPageName(scrollHeight){
-                    var slide2Height = GetScreenCordinates(document.getElementById(slides[1].id)).y;
-                    if (scrollHeight > 0 && scrollHeight < slide2Height){
-                        return slides[0].name; 
-                    }
-                    var slide3Height = GetScreenCordinates(document.getElementById(slides[2].id)).y;
-                    if (scrollHeight > slide2Height && scrollHeight < slide3Height){
-                        return slides[1].name; 
-                    }
-                    var slide4Height = GetScreenCordinates(document.getElementById(slides[3].id)).y;
-                    if (scrollHeight > slide3Height && scrollHeight < slide4Height){
-                        return slides[2].name; 
-                    }
-                    var slide5Height = GetScreenCordinates(document.getElementById(slides[4].id)).y;
-                    if (scrollHeight > slide4Height && scrollHeight < slide5Height){
-                        return slides[3].name; 
-                    }
-                    var slide6Height = GetScreenCordinates(document.getElementById(slides[5].id)).y;
-                    if (scrollHeight > slide5Height && scrollHeight < slide6Height){
-                        return slides[4].name; 
-                    }
-                    // var slide7Height = GetScreenCordinates(document.getElementById(slides[7].id)).y;
-                    if (scrollHeight > slide6Height){
-                        return slides[5].name; 
-                    }
-                }
-                $(window).scroll(function() {
-                    if (document.getElementsByClassName('loading').length === 0){
-                        // todo make 84 and 85 header size
-                        var scrollHeight = $(window).scrollTop()+85;
-
-                        // move the disc to the current page
-                        $scope.navDisc.left = $scope.navBar[getPageName(scrollHeight)].left; 
-                        $scope.$apply();
-                        return;
-                    }
-                });
-            } 
-        </script>
-
     </head>
 
     <body ng-app class="loading">
-        <div ng-controller="TodoCtrl">
+        <div ng-controller="NavCtrl">
             <nav style="postition: absolute">
                 <div id="middle">
                     <div style="width: 160px;position: relative;">
