@@ -1,55 +1,17 @@
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>ALS Ultimate - An Ultimate Frisbee fundraiser to benefit the ALS Association</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/vendor/modernizr-2.7.1.min.js"></script>
-    <script type="text/javascript" src="js/navClick.js"></script>
-    <script src="js/angular.min.js"></script>
-    <link rel="stylesheet" href="css/nav.css">
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>ALS Ultimate - An Ultimate Frisbee fundraiser to benefit the ALS Association</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+        <!-- <script type="text/javascript" src="js/navClick.js"></script> -->
+        <script src="js/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        
+        <link rel="stylesheet" href="css/nav.css">
 
-    <script>
-        function TodoCtrl($scope) {
-            $navBarHeight = 84;
-            $scope.navBar = {"one":{
-                                "left":20,
-                                "href":"slide-2",
-                                "text":"Tournament"
-                            },
-                            "two":{
-                                "left":185,
-                                "href":"slide-3",
-                                "text":"The Cause"
-                            },
-                            "three":{
-                                "left":330,
-                                "href":"slide-4",
-                                "text":"Donations"
-                            },
-                            "four":{
-                                "left":480,
-                                "href":"slide-5",
-                                "text":"Sponsors"
-                            },
-                            "five":{
-                                "left":623,
-                                "href":"slide-6",
-                                "text":"Sign Up"
-                            },
-                            "six":{
-                                "left":775,
-                                "href":"slide-7",
-                                "text":"About Us"
-                            }};
-            $scope.navDisc = {"left":$scope.navBar.one.left};
-            $scope.navClick = function(nav){
-                $scope.navDisc.left = nav.left;
-
-                var scrollY = GetScreenCordinates(document.getElementById(nav.href)).y;
-                scrollY -= 84;
-                window.scrollTo(0,scrollY);
-            }
+        <script>
             // needed for adjusting for the header height
             function GetScreenCordinates(obj) {
                     var p = {};
@@ -67,181 +29,305 @@
                     }
                     return p;
                 }
-        } 
-    </script>
 
-</head>
+            function TodoCtrl($scope) {
+                $navBarHeight = 84;
+                $scope.navBar = {"one":{
+                                    "left":20,
+                                    "href":"slide-2",
+                                    "text":"Tournament"
+                                },
+                                "two":{
+                                    "left":185,
+                                    "href":"slide-3",
+                                    "text":"The Cause"
+                                },
+                                "three":{
+                                    "left":330,
+                                    "href":"slide-4",
+                                    "text":"Donations"
+                                },
+                                "four":{
+                                    "left":480,
+                                    "href":"slide-5",
+                                    "text":"Sponsors"
+                                },
+                                "five":{
+                                    "left":623,
+                                    "href":"slide-6",
+                                    "text":"Sign Up"
+                                },
+                                "six":{
+                                    "left":775,
+                                    "href":"slide-7",
+                                    "text":"About Us"
+                                }};
+                $scope.navDisc = {"left":$scope.navBar.one.left};
+                $scope.navClick = function(nav){
+                    $scope.navDisc.left = nav.left;
 
-<body ng-app class="loading">
-    <div ng-controller="TodoCtrl">
-        <nav style="postition: absolute">
-            <div id="middle">
-                <div style="width: 160px;position: relative;">
-                    <img src="img/logoBanner.png" alt="" style="display: block;">
-                    <div id="header">
-                        <ul>
-                            <li ng-repeat="nav in navBar" style="left: {{nav.left}}px" ng-click="navClick(nav)">
-                                <div id="bannerText">{{nav.text}}</div>
-                            </li>
-                        </ul>
-                        <img src="img/bar.png" alt="" id="bar" >
-                        <img src="img/disc.png" alt="" id="disc" style="left: {{navDisc.left-7}}px;">
+                    var scrollY = GetScreenCordinates(document.getElementById(nav.href)).y;
+                    scrollY -= 84;
+                    window.scrollTo(0,scrollY);
+                }
+                // var nextSlideIndex = 1;
+                var slides = [
+                        {id:"slide-2",name:"one"},
+                        {id:"slide-3",name:"two"},
+                        {id:"slide-4",name:"three"},
+                        {id:"slide-5",name:"four"},
+                        {id:"slide-6",name:"five"},
+                        {id:"slide-7",name:"six"}
+                ];
+                $(window).scroll(function() {
+                    if (document.getElementsByClassName('loading').length === 0){
+                        // todo make 84 and 85 header size
+                        var scrollHeight = $(window).scrollTop()+85;
+
+                        var slide2Height = GetScreenCordinates(document.getElementById(slides[1].id)).y;
+                        if (scrollHeight > 0 && scrollHeight < slide2Height){
+                            $scope.navDisc.left = $scope.navBar[slides[0].name].left; 
+                            $scope.$apply();
+                            return;
+                        }
+                        var slide3Height = GetScreenCordinates(document.getElementById(slides[2].id)).y;
+                        if (scrollHeight > slide2Height && scrollHeight < slide3Height){
+                            $scope.navDisc.left = $scope.navBar[slides[1].name].left; 
+                            $scope.$apply();
+                            return;
+                        }
+                        var slide4Height = GetScreenCordinates(document.getElementById(slides[3].id)).y;
+                        if (scrollHeight > slide3Height && scrollHeight < slide4Height){
+                            $scope.navDisc.left = $scope.navBar[slides[2].name].left; 
+                            $scope.$apply();
+                            return;
+                        }
+                        var slide5Height = GetScreenCordinates(document.getElementById(slides[4].id)).y;
+                        if (scrollHeight > slide4Height && scrollHeight < slide5Height){
+                            $scope.navDisc.left = $scope.navBar[slides[3].name].left; 
+                            $scope.$apply();
+                            return;
+                        }
+                        var slide6Height = GetScreenCordinates(document.getElementById(slides[5].id)).y;
+                        if (scrollHeight > slide5Height && scrollHeight < slide6Height){
+                            $scope.navDisc.left = $scope.navBar[slides[4].name].left; 
+                            $scope.$apply();
+                            return;
+                        }
+                        // var slide7Height = GetScreenCordinates(document.getElementById(slides[7].id)).y;
+                        if (scrollHeight > slide6Height){
+                            $scope.navDisc.left = $scope.navBar[slides[5].name].left; 
+                            $scope.$apply();
+                            return;
+                        }
+                        // var nextSlide = slides[nextSlideIndex];
+                        // var currentSlide = slides[nextSlideIndex-1];
+
+                        // var maxY = GetScreenCordinates(document.getElementById(nextSlide.id)).y;
+                        // var minY;
+                        // if (currentSlide.id === "slide-2"){
+                        //     minY = 0;
+                        // }else{
+                        //     minY = GetScreenCordinates(document.getElementById(currentSlide.id)).y;
+                        // }
+
+                        // // minY = GetScreenCordinates(document.getElementById(slides[nextSlideIndex-1])).y;
+                        // if (scrollHeight > maxY){
+                        //     $scope.navDisc = {"left":$scope.navBar[nextSlide.name].left};
+                        //     nextSlideIndex += 1;
+                        // } 
+                        // else if (scrollHeight < minY){
+                        //     $scope.navDisc = {"left":$scope.navBar[currentSlide.name].left};
+                        //     nextSlideIndex -= 1;
+                        // } 
+                        // // if (scrollHeight < minY+50 && scrollHeight > minY-50){
+                        //     $scope.navDisc = {"left":$scope.navBar[lastSlide.name].left};
+                        //     nextSlideIndex -= 1;
+                        // } 
+                        // else if(scrollHeight === minY){
+                            // $scope.navDisc = {"left":$scope.navBar.one.left};
+
+                        // }
+                        // else{
+                        //     $scope.navDisc = {"left":$scope.navBar.one.left};
+                        //     // nextSlideIndex -= 1;
+                        // }
+                        
+                    }
+                });
+            } 
+        </script>
+
+    </head>
+
+    <body ng-app class="loading">
+        <div ng-controller="TodoCtrl">
+            <nav style="postition: absolute">
+                <div id="middle">
+                    <div style="width: 160px;position: relative;">
+                        <img src="img/logoBanner.png" alt="" style="display: block;">
+                        <div id="header">
+                            <ul>
+                                <li ng-repeat="nav in navBar" style="left: {{nav.left}}px" ng-click="navClick(nav)">
+                                    <div id="bannerText">{{nav.text}}</div>
+                                </li>
+                            </ul>
+                            <img src="img/bar.png" alt="" id="bar" >
+                            <img src="img/disc.png" alt="" id="disc" style="left: {{navDisc.left-7}}px;">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-    </div>
-    <main>
-        <!-- @@@@@@@ -->
-        <!-- SLIDE 1 -->
-        <!-- @@@@@@@ -->
-        <section id="slide-1" class="homeSlide">
-            <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
-                <div class="center">
-                    <img src="img/logo.png" alt="" style="margin-top: 100px;">
-                    <div id="slide1Text">
-                        <span style="font-size: 49px;">ULTIMATE IMPACT</span>
-                        <hr>
-                        an Ultimate Hat Tournament <br>
-                        raising money for ALS
-                        <hr>
-                        August 23, 2014
-                        <hr>
-                        Field Names, Maplewood
+            </nav>
+        </div>
+        <main>
+            <!-- @@@@@@@ -->
+            <!-- SLIDE 1 -->
+            <!-- @@@@@@@ -->
+            <section id="slide-1" class="homeSlide">
+                <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
+                    <div class="center">
+                        <img src="img/logo.png" alt="" style="margin-top: 100px;">
+                        <div id="slide1Text">
+                            <span style="font-size: 49px;">ULTIMATE IMPACT</span>
+                            <hr>
+                            an Ultimate Hat Tournament <br>
+                            raising money for ALS
+                            <hr>
+                            August 23, 2014
+                            <hr>
+                            Field Names, Maplewood
+                        </div>
                     </div>
                 </div>
+            </section>
+
+            <div class="center" id="text1">
+                <img src="img/intro.png" alt="" class="middle">
+    <!--             <h2>About the Tournament:</h2>
+                <ul>
+                    <li>A one day ultimate hat tournament to raise money for ALS</li>
+                    <li>10am - 2pm</li>
+                    <li>Saturday, August 23rd, 2014</li>
+                    <li>TODO: These Fields</li>
+                    <li>TODO: This address</li>
+                </ul>
+
+                Tired of playing ultimate with no purpose or cause? Come join us for a one-day hat tournament filled with fun, a raffle, food, sweet merchandise, and a chance to give back to the community by raising money for a great cause. Invite your friends, coworkers, family, or the friendly person you just met while waiting in line for coffee. no experience required. -->
             </div>
-        </section>
+            <!-- @@@@@@@ -->
+            <!-- SLIDE 2 -->
+            <!-- @@@@@@@ -->
+            <section id="slide-2"  style="height: 200px;">  <!-- class="homeSlide" -->
+                <div class="bcg" data-center="background-position: 50% 10px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#slide-2">
+                </div>
+            </section>
 
-        <div class="center" id="text1">
-            <img src="img/intro.png" alt="" class="middle">
-<!--             <h2>About the Tournament:</h2>
-            <ul>
-                <li>A one day ultimate hat tournament to raise money for ALS</li>
-                <li>10am - 2pm</li>
-                <li>Saturday, August 23rd, 2014</li>
-                <li>TODO: These Fields</li>
-                <li>TODO: This address</li>
-            </ul>
+            <div class="center" id="text2">
+    <!--             <h2>About ALS</h2>
+                Amyotrophic lateral sclerosis (ALS) is a progressive neurodegenerative disease that affects nerve cells in the brain and the spinal cord. Motor neurons reach from the brain to the spinal cord and from the spinal cord to the muscles throughout the body. The progressive degeneration of the motor neurons in ALS eventually leads to their death. When the motor neurons die, the ability of the brain to initiate and control muscle movement is lost. With voluntary muscle action progressively affected, patients in the later stages of the disease may become totally paralyzed.
 
-            Tired of playing ultimate with no purpose or cause? Come join us for a one-day hat tournament filled with fun, a raffle, food, sweet merchandise, and a chance to give back to the community by raising money for a great cause. Invite your friends, coworkers, family, or the friendly person you just met while waiting in line for coffee. no experience required. -->
-        </div>
-        <!-- @@@@@@@ -->
-        <!-- SLIDE 2 -->
-        <!-- @@@@@@@ -->
-        <section id="slide-2"  style="height: 200px;">  <!-- class="homeSlide" -->
-            <div class="bcg" data-center="background-position: 50% 10px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#slide-2">
+                <h2>The ALS Association</h2>
+                All proceeds will be donated to the ALS Association, a national non-profit organization leading "the way in research, care services, public education, and public policy — giving help and hope to those facing the disease". (link to website)
+    -->      
+                <img src="img/theTournamentText.png" alt="" class="middle">
             </div>
-        </section>
 
-        <div class="center" id="text2">
-<!--             <h2>About ALS</h2>
-            Amyotrophic lateral sclerosis (ALS) is a progressive neurodegenerative disease that affects nerve cells in the brain and the spinal cord. Motor neurons reach from the brain to the spinal cord and from the spinal cord to the muscles throughout the body. The progressive degeneration of the motor neurons in ALS eventually leads to their death. When the motor neurons die, the ability of the brain to initiate and control muscle movement is lost. With voluntary muscle action progressively affected, patients in the later stages of the disease may become totally paralyzed.
+            <!-- @@@@@@@ -->
+            <!-- SLIDE 3 -->
+            <!-- @@@@@@@ -->
+            <section id="slide-3"  style="height: 200px;">  <!-- class="homeSlide" -->
+                <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#slide-3">
+                </div>
+            </section>
 
-            <h2>The ALS Association</h2>
-            All proceeds will be donated to the ALS Association, a national non-profit organization leading "the way in research, care services, public education, and public policy — giving help and hope to those facing the disease". (link to website)
--->      
-            <img src="img/theTournamentText.png" alt="" class="middle">
-        </div>
-
-        <!-- @@@@@@@ -->
-        <!-- SLIDE 3 -->
-        <!-- @@@@@@@ -->
-        <section id="slide-3"  style="height: 200px;">  <!-- class="homeSlide" -->
-            <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#slide-3">
+            <div class="center" id="text3">
+    <!--             want to sponsor us? contact us....
+                <br>
+                <br>(Still not convinced? watch this video to make you feel better?)**not sure what we could put here, but thought it might be cool if we had something funny**
+     -->        
+                <img src="img/theCauseText.png" alt="" class="middle">
             </div>
-        </section>
+            <!-- @@@@@@@ -->
+            <!-- SLIDE 4 -->
+            <!-- @@@@@@@ -->
+            <section id="slide-4"  style="height: 200px;">  <!-- class="homeSlide" -->
+                <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#slide-4">
+                </div>
+            </section>
 
-        <div class="center" id="text3">
-<!--             want to sponsor us? contact us....
-            <br>
-            <br>(Still not convinced? watch this video to make you feel better?)**not sure what we could put here, but thought it might be cool if we had something funny**
- -->        
-            <img src="img/theCauseText.png" alt="" class="middle">
-        </div>
-        <!-- @@@@@@@ -->
-        <!-- SLIDE 4 -->
-        <!-- @@@@@@@ -->
-        <section id="slide-4"  style="height: 200px;">  <!-- class="homeSlide" -->
-            <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#slide-4">
+
+    <!--         todo: ned to include thi
+            <br>Want to be sponsored? Have your friend, parent, or simply anyone you can find sponsor you. An initial $15 dollars gets you a personal penny; and for every layout, D, score, sky, or sweet play our stat keepers think acceptable, your sponsor donates $1. There will be prizes to the top 3 sponsored players, so be ready to ball out. [] check here and we'll send you the info by email to sign up to be sponsored.
+     -->
+
+            <div class="center" id="text4">
+                <img src="img/donationText.png" alt="" class="middle">
             </div>
-        </section>
 
+            <!-- @@@@@@@ -->
+            <!-- SLIDE 5 -->
+            <!-- @@@@@@@ -->
+            <section id="slide-5"  style="height: 200px;">  <!-- class="homeSlide" -->
+                <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#slide-5">
+                </div>
+            </section>
 
-<!--         todo: ned to include thi
-        <br>Want to be sponsored? Have your friend, parent, or simply anyone you can find sponsor you. An initial $15 dollars gets you a personal penny; and for every layout, D, score, sky, or sweet play our stat keepers think acceptable, your sponsor donates $1. There will be prizes to the top 3 sponsored players, so be ready to ball out. [] check here and we'll send you the info by email to sign up to be sponsored.
- -->
+            <div class="center" id="text5">
+               <!--  <h2>About Us</h2>
 
-        <div class="center" id="text4">
-            <img src="img/donationText.png" alt="" class="middle">
-        </div>
+                <h3>Nick Ladas</h3>
+                I'm currently a junior studying mechanical engineering at the university of wisconsin madison. I've been playing ultimate competitively since 8th grade and am currently playing on the wisconsin hodags. during my sophomore year in high school, my father was diagnosed with ALS, completely changing my life. This tournament has given me the chance to help everyone affected by the disease and to bring the community closer togather through a day of fun-filled competition.
 
-        <!-- @@@@@@@ -->
-        <!-- SLIDE 5 -->
-        <!-- @@@@@@@ -->
-        <section id="slide-5"  style="height: 200px;">  <!-- class="homeSlide" -->
-            <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#slide-5">
+                <h3>Daniel Rasmuson</h3>
+                "If you are not making someone's life better you are wasting your time." Will Smith - My goals are to add value to the lives of people around the world. As a management major I hope to advance the the world by pushing the boundaries of technology. Currently I am working towards this goal by improving myself in the areas of leadership and software development. -->
+                <img src="img/sponsorText.png" alt="" class="middle">
             </div>
-        </section>
+            <!-- @@@@@@@ -->
+            <!-- SLIDE 6 -->
+            <!-- @@@@@@@ -->
+            <section id="slide-6"  style="height: 200px;">  <!-- class="homeSlide" -->
+                <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#slide-6">
+                </div>
+            </section>
 
-        <div class="center" id="text5">
-           <!--  <h2>About Us</h2>
+            <div class="center" id="text6">
+    <!--             <h2>About Us</h2>
 
-            <h3>Nick Ladas</h3>
-            I'm currently a junior studying mechanical engineering at the university of wisconsin madison. I've been playing ultimate competitively since 8th grade and am currently playing on the wisconsin hodags. during my sophomore year in high school, my father was diagnosed with ALS, completely changing my life. This tournament has given me the chance to help everyone affected by the disease and to bring the community closer togather through a day of fun-filled competition.
+                <h3>Nick Ladas</h3>
+                I'm currently a junior studying mechanical engineering at the university of wisconsin madison. I've been playing ultimate competitively since 8th grade and am currently playing on the wisconsin hodags. during my sophomore year in high school, my father was diagnosed with ALS, completely changing my life. This tournament has given me the chance to help everyone affected by the disease and to bring the community closer togather through a day of fun-filled competition.
 
-            <h3>Daniel Rasmuson</h3>
-            "If you are not making someone's life better you are wasting your time." Will Smith - My goals are to add value to the lives of people around the world. As a management major I hope to advance the the world by pushing the boundaries of technology. Currently I am working towards this goal by improving myself in the areas of leadership and software development. -->
-            <img src="img/sponsorText.png" alt="" class="middle">
-        </div>
-        <!-- @@@@@@@ -->
-        <!-- SLIDE 6 -->
-        <!-- @@@@@@@ -->
-        <section id="slide-6"  style="height: 200px;">  <!-- class="homeSlide" -->
-            <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#slide-6">
+                <h3>Daniel Rasmuson</h3>
+                "If you are not making someone's life better you are wasting your time." Will Smith - My goals are to add value to the lives of people around the world. As a management major I hope to advance the the world by pushing the boundaries of technology. Currently I am working towards this goal by improving myself in the areas of leadership and software development. -->
+                <!-- <img src="img/signUpText.png" alt="" class="middle"> -->
+                <iframe src="https://docs.google.com/forms/d/1GQ3mbnBNkNrWoAbgme_Xww3NEZq0RW0HrUVpMqnTE-A/viewform?embedded=true" width="760" height="855" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
             </div>
-        </section>
 
-        <div class="center" id="text6">
-<!--             <h2>About Us</h2>
+            <!-- @@@@@@@ -->
+            <!-- SLIDE 4 -->
+            <!-- @@@@@@@ -->
+            <section id="slide-7"  style="height: 200px;">  <!-- class="homeSlide" -->
+                <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#slide-7">
+                </div>
+            </section>
 
-            <h3>Nick Ladas</h3>
-            I'm currently a junior studying mechanical engineering at the university of wisconsin madison. I've been playing ultimate competitively since 8th grade and am currently playing on the wisconsin hodags. during my sophomore year in high school, my father was diagnosed with ALS, completely changing my life. This tournament has given me the chance to help everyone affected by the disease and to bring the community closer togather through a day of fun-filled competition.
+            <div class="center" id="text7">
+    <!--             <h2>About Us</h2>
 
-            <h3>Daniel Rasmuson</h3>
-            "If you are not making someone's life better you are wasting your time." Will Smith - My goals are to add value to the lives of people around the world. As a management major I hope to advance the the world by pushing the boundaries of technology. Currently I am working towards this goal by improving myself in the areas of leadership and software development. -->
-            <!-- <img src="img/signUpText.png" alt="" class="middle"> -->
-            <iframe src="https://docs.google.com/forms/d/1GQ3mbnBNkNrWoAbgme_Xww3NEZq0RW0HrUVpMqnTE-A/viewform?embedded=true" width="760" height="855" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-        </div>
+                <h3>Nick Ladas</h3>
+                I'm currently a junior studying mechanical engineering at the university of wisconsin madison. I've been playing ultimate competitively since 8th grade and am currently playing on the wisconsin hodags. during my sophomore year in high school, my father was diagnosed with ALS, completely changing my life. This tournament has given me the chance to help everyone affected by the disease and to bring the community closer togather through a day of fun-filled competition.
 
-        <!-- @@@@@@@ -->
-        <!-- SLIDE 4 -->
-        <!-- @@@@@@@ -->
-        <section id="slide-7"  style="height: 200px;">  <!-- class="homeSlide" -->
-            <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#slide-7">
+                <h3>Daniel Rasmuson</h3>
+                "If you are not making someone's life better you are wasting your time." Will Smith - My goals are to add value to the lives of people around the world. As a management major I hope to advance the the world by pushing the boundaries of technology. Currently I am working towards this goal by improving myself in the areas of leadership and software development. -->
+                <img src="img/aboutUsText.png" alt="" class="middle">
             </div>
-        </section>
+        </main>
 
-        <div class="center" id="text7">
-<!--             <h2>About Us</h2>
-
-            <h3>Nick Ladas</h3>
-            I'm currently a junior studying mechanical engineering at the university of wisconsin madison. I've been playing ultimate competitively since 8th grade and am currently playing on the wisconsin hodags. during my sophomore year in high school, my father was diagnosed with ALS, completely changing my life. This tournament has given me the chance to help everyone affected by the disease and to bring the community closer togather through a day of fun-filled competition.
-
-            <h3>Daniel Rasmuson</h3>
-            "If you are not making someone's life better you are wasting your time." Will Smith - My goals are to add value to the lives of people around the world. As a management major I hope to advance the the world by pushing the boundaries of technology. Currently I am working towards this goal by improving myself in the areas of leadership and software development. -->
-            <img src="img/aboutUsText.png" alt="" class="middle">
-        </div>
-    </main>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')
-    </script>
-    <script src="js/imagesloaded.js"></script>
-    <script src="js/skrollr.js"></script>
-    <script src="js/_main.js"></script>
-
+        <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')
+        </script>
+        <script src="js/imagesloaded.js"></script>
+        <script src="js/skrollr.js"></script>
+        <script src="js/_main.js"></script>
 </body>
 
 </html>
