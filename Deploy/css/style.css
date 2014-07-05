@@ -334,3 +334,18 @@ hr {
 #footerImgs input:hover{
 	height: 25px;
 }
+.title{
+	color: red;
+	font-weight: bold;
+	text-align: center;
+	font-size: 40px;
+}
+.hrTitle{
+    color: red;
+    background-color: red;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    height: 3px;
+    margin-top: 10px;
+}
