@@ -67,28 +67,31 @@ function NavCtrl($scope) {
         var currentY;
         var nextY;
 
+        // if its the first page
         nextY = getYPos($scope.navBar[1].id);
         if (y < nextY){
             return 0; 
         }
-        for (var i = 2; i < $scope.navBar.length; i++) {
-            currentY = getYPos($scope.navBar[i-1].id);
-            nextY = getYPos($scope.navBar[i].id);
+
+        // any of the middle slides
+        for (var i = 1; i < $scope.navBar.length-1; i++) {
+            currentY = getYPos($scope.navBar[i].id);
+            nextY = getYPos($scope.navBar[i+1].id);
             if (y > currentY && y < nextY){
-                return i-1; 
+                return i; 
             }
         };
+
+        // if its the last slide
         return $scope.navBar.length-1; 
     }
     $(window).scroll(function() {
-        if (document.getElementsByClassName('loading').length === 0){
-            // todo make 84 and 85 header size
-            var scrollHeight = $(window).scrollTop()+$scope.NAV_BAR_HEIGHT+1;
+        // todo make 84 and 85 header size
+        var scrollHeight = $(window).scrollTop()+$scope.NAV_BAR_HEIGHT+1;
 
-            // move the disc to the current page
-            $scope.navDisc.left = $scope.navBar[getPageNumber(scrollHeight)].left; 
-            $scope.$apply();
-            return;
-        }
+        // move the disc to the current page
+        $scope.navDisc.left = $scope.navBar[getPageNumber(scrollHeight)].left; 
+        $scope.$apply();
+        return;
     });
 } 
