@@ -79,80 +79,41 @@
                         {id:"slide-6",name:"five"},
                         {id:"slide-7",name:"six"}
                 ];
+                function getPageName(scrollHeight){
+                    var slide2Height = GetScreenCordinates(document.getElementById(slides[1].id)).y;
+                    if (scrollHeight > 0 && scrollHeight < slide2Height){
+                        return slides[0].name; 
+                    }
+                    var slide3Height = GetScreenCordinates(document.getElementById(slides[2].id)).y;
+                    if (scrollHeight > slide2Height && scrollHeight < slide3Height){
+                        return slides[1].name; 
+                    }
+                    var slide4Height = GetScreenCordinates(document.getElementById(slides[3].id)).y;
+                    if (scrollHeight > slide3Height && scrollHeight < slide4Height){
+                        return slides[2].name; 
+                    }
+                    var slide5Height = GetScreenCordinates(document.getElementById(slides[4].id)).y;
+                    if (scrollHeight > slide4Height && scrollHeight < slide5Height){
+                        return slides[3].name; 
+                    }
+                    var slide6Height = GetScreenCordinates(document.getElementById(slides[5].id)).y;
+                    if (scrollHeight > slide5Height && scrollHeight < slide6Height){
+                        return slides[4].name; 
+                    }
+                    // var slide7Height = GetScreenCordinates(document.getElementById(slides[7].id)).y;
+                    if (scrollHeight > slide6Height){
+                        return slides[5].name; 
+                    }
+                }
                 $(window).scroll(function() {
                     if (document.getElementsByClassName('loading').length === 0){
                         // todo make 84 and 85 header size
                         var scrollHeight = $(window).scrollTop()+85;
 
-                        var slide2Height = GetScreenCordinates(document.getElementById(slides[1].id)).y;
-                        if (scrollHeight > 0 && scrollHeight < slide2Height){
-                            $scope.navDisc.left = $scope.navBar[slides[0].name].left; 
-                            $scope.$apply();
-                            return;
-                        }
-                        var slide3Height = GetScreenCordinates(document.getElementById(slides[2].id)).y;
-                        if (scrollHeight > slide2Height && scrollHeight < slide3Height){
-                            $scope.navDisc.left = $scope.navBar[slides[1].name].left; 
-                            $scope.$apply();
-                            return;
-                        }
-                        var slide4Height = GetScreenCordinates(document.getElementById(slides[3].id)).y;
-                        if (scrollHeight > slide3Height && scrollHeight < slide4Height){
-                            $scope.navDisc.left = $scope.navBar[slides[2].name].left; 
-                            $scope.$apply();
-                            return;
-                        }
-                        var slide5Height = GetScreenCordinates(document.getElementById(slides[4].id)).y;
-                        if (scrollHeight > slide4Height && scrollHeight < slide5Height){
-                            $scope.navDisc.left = $scope.navBar[slides[3].name].left; 
-                            $scope.$apply();
-                            return;
-                        }
-                        var slide6Height = GetScreenCordinates(document.getElementById(slides[5].id)).y;
-                        if (scrollHeight > slide5Height && scrollHeight < slide6Height){
-                            $scope.navDisc.left = $scope.navBar[slides[4].name].left; 
-                            $scope.$apply();
-                            return;
-                        }
-                        // var slide7Height = GetScreenCordinates(document.getElementById(slides[7].id)).y;
-                        if (scrollHeight > slide6Height){
-                            $scope.navDisc.left = $scope.navBar[slides[5].name].left; 
-                            $scope.$apply();
-                            return;
-                        }
-                        // var nextSlide = slides[nextSlideIndex];
-                        // var currentSlide = slides[nextSlideIndex-1];
-
-                        // var maxY = GetScreenCordinates(document.getElementById(nextSlide.id)).y;
-                        // var minY;
-                        // if (currentSlide.id === "slide-2"){
-                        //     minY = 0;
-                        // }else{
-                        //     minY = GetScreenCordinates(document.getElementById(currentSlide.id)).y;
-                        // }
-
-                        // // minY = GetScreenCordinates(document.getElementById(slides[nextSlideIndex-1])).y;
-                        // if (scrollHeight > maxY){
-                        //     $scope.navDisc = {"left":$scope.navBar[nextSlide.name].left};
-                        //     nextSlideIndex += 1;
-                        // } 
-                        // else if (scrollHeight < minY){
-                        //     $scope.navDisc = {"left":$scope.navBar[currentSlide.name].left};
-                        //     nextSlideIndex -= 1;
-                        // } 
-                        // // if (scrollHeight < minY+50 && scrollHeight > minY-50){
-                        //     $scope.navDisc = {"left":$scope.navBar[lastSlide.name].left};
-                        //     nextSlideIndex -= 1;
-                        // } 
-                        // else if(scrollHeight === minY){
-                            // $scope.navDisc = {"left":$scope.navBar.one.left};
-
-                        // }
-                        // else{
-                        //     $scope.navDisc = {"left":$scope.navBar.one.left};
-                        //     // nextSlideIndex -= 1;
-                        // }
-                        
+                        // move the disc to the current page
+                        $scope.navDisc.left = $scope.navBar[getPageName(scrollHeight)].left; 
+                        $scope.$apply();
+                        return;
                     }
                 });
             } 
